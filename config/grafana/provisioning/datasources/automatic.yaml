@@ -1,0 +1,19 @@
+apiVersion: 1
+
+datasources:
+  - name: Loki
+    type: loki
+    access: proxy
+    url: http://loki:3100
+    password: ''
+    user: ''
+    database: ''
+    readOnly: false
+  - name: Telegraf
+    type: influxdb
+    access: proxy
+    url: http://influxdb:8086
+    password: ''
+    user: ''
+    database: telegraf
+    readOnly: false
